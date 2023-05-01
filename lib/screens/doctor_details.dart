@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:hello_doctor/components/button.dart';
 import 'package:hello_doctor/components/custom_appbar.dart';
+import 'package:hello_doctor/screens/booking_page.dart';
 import 'package:hello_doctor/utils/config.dart';
 
 class DoctorDetails extends StatefulWidget {
@@ -50,6 +51,7 @@ class _DoctorDetailsState extends State<DoctorDetails> {
                   title: 'Book Appointment',
                   onPressed: () {
                     // navigate to booking page
+                    Navigator.of(context).pushNamed('booking_page');
                   },
                   disable: false,
                 )
